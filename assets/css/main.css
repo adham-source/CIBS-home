@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo &display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 /*Global CSS*/
 :root
 {
@@ -122,31 +122,6 @@ a.btn-link {
 .navbar .navbar-nav .nav-item .nav-link:hover {
     background: var(--sec-color);
 }
-
-/*.nav-item .drop-menu {
-    box-sizing: border-box;
-    list-style: none;
-    position: absolute;
-    background: #fff;
-    box-shadow: var(--main-shadow);
-    padding: 0;
-    margin: 0;
-    border-top: 5px solid var(--sec-color);
-    transition: all 1s;
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-}
-
-.nav-item:hover .drop-menu {
-    opacity: 1;
-    visibility: visible;
-    display: block;
-}
-
-.nav-item .drop-menu .drop-item {
-    margin: .2rem 0;
-}*/
 
 .nav-item .dropdown .dropdown-menu {
     margin-top: 0;
@@ -602,7 +577,7 @@ header {
 /*End design web*/
 
 /*Start media query*/
-@media screen and(max-width: 991px) {
+@media screen and (max-width: 991px) {
     .navbar {
         height: initial;
         padding-top: initial;
