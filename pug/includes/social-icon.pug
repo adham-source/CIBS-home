@@ -1,0 +1,13 @@
+//- Starting social icons
+//-div(class = 'social-icons')
+    - const mySocialIcon = {'https://www.linkedin.com/' : 'fab fa-linkedin-in', 'https://github.com/' : 'fab fa-github-alt', 'tel:00201280520100' : 'fab fa-whatsapp', 'mailto:example@gmail.com' : 'fab fa-google'}
+    each icons, linkIcon in mySocialIcon
+        |
+        |
+        a(class = 'icon' href = `${linkIcon}` target = '_blank'): i(class = `${icons}`)
+div(class = 'social-icons' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500")
+    - const mySocialIcon = {'https://www.facebook.com/' : 'fab fa-facebook-f', 'https://www.twitter.com/' : 'fab fa-twitter', 'https://www.instagram.com/' : 'fab fa-instagram', 'https://www.youtube.com' : 'fab fa-youtube'}
+    each icons, linkIcon in mySocialIcon
+        |
+        |
+        a(class = 'icon' href = `${linkIcon}` target = '_blank'): i(class = `${icons}`)

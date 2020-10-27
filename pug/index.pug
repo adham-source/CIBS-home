@@ -1,0 +1,52 @@
+doctype html
+html(lang = 'ar' dir = 'rtl')
+    head
+        // Required meta tags 
+        meta(charset = 'UTF-8' '')/
+        meta(name = 'viewport' content = 'width=device-width, initial-scale=1, shrink-to-fit=no' '')/
+        //- Styles.pug
+        include ./includes/styles.pug
+        title الرئيسية
+    body
+        //- navigation.pug
+        include ./includes/navBar.pug
+        //- Slider
+        include ./includes/slider.pug
+
+        //- Slider bottom
+        include ./includes/slide-bottom.pug
+
+        // Start design web 
+        section(class = 'design-web py-4 my-3')
+            div(class = 'container')
+                div(class = 'content-text text-center py-2')
+                    h2(class = 'sub-title' data-aos = 'fade-down' data-aos-duration = '1000') تصميم مواقع
+                    p(class = 'global-text' data-aos = 'fade-up' data-aos-duration = '1200') يحتوي تصميم موقع الويب للشركات على بعض العناصر المصممة لجذب العملاء أحد هذه العناصر هى المقدمة فإن مقدمة الصفحة أو الموقع تتفاعل مع زوار الموقع الإلكتروني أو الصفحة للمستخدم ويغريه لزيارة المزيد من المواقع .
+                div(class = 'row')
+                    div(class = 'col-lg-4 col-md-6')
+                        div(class = 'design-info' data-aos = 'fade-down' data-aos-duration = '1300')
+                            span(class = 'icon fas fa-laptop-code')
+                            h5(class = 'titles') تحسين مصدقية العمل 
+                    div(class = 'col-lg-4 col-md-6')
+                        div(class = 'design-info' data-aos = 'fade-up' data-aos-duration = '1300')
+                            span(class = 'icon far fa-comments')
+                            h5(class = 'titles') تعزيز وجودك على الإنترنت  
+                    div(class = 'col-lg-4 col-md-6')
+                        div(class = 'design-info' data-aos = 'fade-down' data-aos-duration = '1300')
+                            span(class = 'icon fas fa-people-carry')
+                            h5(class = 'titles') بناء علاقة قوية مع السوق 
+                    div(class = 'col-lg-4 col-md-6')
+                        div(class = 'design-info' data-aos = 'fade-up' data-aos-duration = '1400')
+                            span(class = 'icon fas fa-project-diagram')
+                            h5(class = 'titles') طريقة فعالة لتعزيز عملك 
+                    div(class = 'col-lg-4 col-md-6')
+                        div(class = 'design-info' data-aos = 'fade-down' data-aos-duration = '1400')
+                            span(class = 'icon fas fa-funnel-dollar')
+                            h5(class = 'titles') إنشاء آداة توليد المبيعات 
+                    div(class = 'col-lg-4 col-md-6')
+                        div(class = 'design-info' data-aos = 'fade-up' data-aos-duration = '1400')
+                            span(class = 'icon fas fa-bezier-curve')
+                            h5(class = 'titles') عرض عملك باحتراف  
+        // End design web 
+        //- scripts.pug
+        include ./includes/scripts.pug
