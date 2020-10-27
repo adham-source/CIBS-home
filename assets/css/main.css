@@ -88,8 +88,11 @@ a.btn-link {
 .navbar .nav-toggle {
     background: var(--sec-color);
     color: #fff;
-    padding: 0.5rem 0.7rem;
-    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    /*padding: 0.5rem 0.7rem;*/
+    font-size: 1.3rem;
     border-radius: 0.3rem;
     transition: all 0.3s;
 }
@@ -129,16 +132,17 @@ a.btn-link {
     box-shadow: var(--main-shadow);
     border-top: 5px solid var(--sec-color);
     border-radius: initial !important;
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-    transition: all 0.5s;
+    animation: animateDrop 1s ease-in-out;
 }
 
-.nav-item:hover .dropdown .dropdown-menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
+@keyframes animateDrop {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .nav-item .dropdown .dropdown-menu .dropdown-item {
@@ -153,7 +157,7 @@ a.btn-link {
     cursor: pointer;
 }
 
-.nav-item .dropdown .dropdown-menu:last-child .dropdown-item {
+.nav-item .dropdown .dropdown-menu .dropdown-item:last-child {
     border-bottom: none;
 }
 
