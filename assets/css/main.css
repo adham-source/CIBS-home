@@ -605,6 +605,11 @@ header {
         display: none
     }
 
+    .carousel-item .slide-image {
+        width: 15rem;
+        margin-top: -1rem;
+    }
+
     .carousel-item .slide-text {
         margin-top: -15rem
     }
