@@ -1,0 +1,58 @@
+/*Start questions*/
+.questions {
+    @include section($mainColor, #0077b3);
+    .fqa {
+        .item {
+            border: none;
+            background: none;
+            border-radius: .5rem;
+            .question {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem .7rem;
+                margin-bottom: .7rem;
+                background: #f4f4f4;
+                color: $mainDeColor;
+                border-radius: .5rem !important;
+                box-shadow: $mainShadow;
+                cursor: pointer;
+                .icon {
+                    font-size: 1.3rem;
+                    transition: all .3s;
+                }
+                .fa-sort-down {
+                    display: none;
+                }
+            }
+            &.accordion-active {
+                .question {
+                    background: $mainDeColor;
+                    color: #f4f4f4;
+                    box-shadow: none;
+                }
+                .fa-sort-down {
+                    display: block;
+                }
+                .fa-caret-left {
+                    display: none;
+                }
+            }
+            .answer {
+                text-align: justify;
+                color: #f4f4f4;
+                line-height: 1.6;
+                padding: .5rem;
+            }
+        }
+    }
+    .img-question {
+        border-radius: .5rem;
+        padding: .5rem 0;
+        img {
+            border-radius: .5rem;
+            box-shadow: $mainShadow;
+        }
+    }
+}
+/*End questions*/

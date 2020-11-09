@@ -1,0 +1,86 @@
+/*Start footer*/
+footer {
+    @include section(#0e0e0e, #0e0e0e);
+    position: relative;
+    color: #fff;
+    .footer-ribbon {
+        position: absolute;
+        top: -1.3rem;
+        padding: .7rem 1.3rem;
+        background: $mainColor;
+        &::after {
+            content: '';
+            position: absolute;
+            right: -.6rem;
+            top: 0;
+            border-left: .6rem solid #005580;
+            border-top: 1rem solid transparent;
+            display: block;
+            height: 0;
+            width: 7px;
+        }
+        .title-ribbon {
+            margin: 0;
+            color: #fff;
+            font-weight: $bold;
+        }
+    }
+    .title {
+        color: $mainColor;
+        font-weight: $bold;
+        margin-bottom: 1rem;
+    }
+    .info {
+        margin-bottom: .5rem;
+        display: flex;
+        align-items: center;
+        .link {
+            color: #fff;
+            margin: .3rem 0;
+        }
+        .icon {
+            margin-left: .7rem;
+            line-height: 1.6;
+        }
+    }
+    .phones {
+        display: flex;
+        flex-direction: column;
+        align-items: start
+        ;
+    }
+    p {
+        text-align: justify;
+        color: #fff;
+        line-height: 1.6;
+    }
+}
+.footer-bottom {
+    background: #191919;
+    color: #fff;
+    text-align: center;
+    .social {
+        .icon {
+            font-size: 1.5rem;
+            margin: 0 .5rem;
+            color: #fff;
+            text-shadow: $mainShadow;
+            transition: $trans;
+            &:hover {
+                &:nth-child(1) {
+                    color: $faceColor;
+                }
+                &:nth-child(2) {
+                    color: $twiColor;
+                }
+                &:nth-child(3) {
+                    color: $whatsColor;
+                }
+                &:nth-child(4) {
+                    color: $ytColor;
+                }
+            }
+        }
+    }
+}
+/*End footer*/

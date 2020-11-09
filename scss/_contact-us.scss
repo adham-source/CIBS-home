@@ -1,0 +1,83 @@
+/*Start contact us*/
+.contact-us {
+    @include section(none, none);
+    h2 {
+        @include subTitle($mainDeColor, right);
+    }
+    form {
+        label {
+            font-weight: $bold;
+            color: $mainDeColor;
+        }
+        input {
+            margin-bottom: .5rem;
+            box-shadow: $mainShadow;
+            border: none;
+            background: none;
+            outline: none;
+            &:focus {
+                box-shadow: none;
+                border: 1px solid rgba(0,0,0,.3);
+            }
+        }
+        textarea {
+            @extend input;
+            resize: none;
+        }
+        .btn-submit {
+            color: #fff;
+            background: $mainColor;
+            border: none;
+            outline: none;
+            border-radius: .5rem;
+            padding: .4rem .9rem;
+            margin-top: .5rem;
+            transition: $trans;
+            box-shadow: $mainShadow;
+            opacity: .9;
+            cursor: pointer;
+            &:hover {
+                box-shadow: none;
+                opacity: 1;
+            }
+        }
+    }
+    .title {
+        font-weight: $bold;
+        color: $mainColor;
+        margin-bottom: .5rem;
+    }
+    hr {
+        width: 85%;
+        margin: 1rem auto;
+    }
+    .info {
+        margin-bottom: .5rem;
+        .icon {
+            background: $mainColor;
+            color: #fff;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 2rem;
+            margin-left: .5rem;
+        }
+        .num {
+            color: $mainDeColor;
+        }
+        .em {
+            @extend .num;
+        }
+    }
+    .time {
+        margin-bottom: .4rem;
+        color: $mainDeColor;
+        span {
+            &:first-child {
+                margin-left: .5rem;
+            }
+        }
+    }
+}
+/*End contact us*/

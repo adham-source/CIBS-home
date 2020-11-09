@@ -1,0 +1,38 @@
+// Start footer
+footer(class = 'mt-none')
+    div.container
+        div(class = 'footer-ribbon')
+            h5(class = 'title-ribbon') تواصل معنا
+        div(class = 'row')
+            div(class = 'col-lg-6 mt-3')
+                h6(class = 'title') اتصل بنا 
+                div(class = 'location info')
+                    a(class = 'link' href = '#')
+                        span(class = 'icon fas fa-map')
+                        span(class = 'address') 410 ب ش فيصل محطة الطالبية - الجيزة
+                div(class = 'phones info')
+                    span(class = 'text') مصر
+                    a(class = 'link' href = 'tel:00201101117727') 00201101117727
+                    a(class = 'link' href = 'tel:00201100897340') 00201100897340
+                    a(class = 'link' href = 'tel:00201021190067') 00201021190067
+                    span(class = 'text') السعودية
+                    a(class = 'link' href = 'tel:00966552661598') 00966552661598
+                div(class = 'mail info')
+                    a(class = 'link' href = 'mailto:info@cibsoft.com')
+                        span(class = 'icon fas fa-envelope')
+                        span(class = 'text') info@cibsoft.com
+            div(class = 'col-lg-6 mt-3')
+                h6(class = 'title') من نحن
+                p شركة متخصصة في التوصيف والتحليل وتصميم البرمجيات وقواعد البيانات والتطبيقات بمختلف أنواعها وأعمال إنتاج البرامج والتطبيقات وإنشاء قواعد البيانات ونظم المعلومات الالكترونية وتشغيلها والتدريب عليها. إنتاج المحتوى الإلكتروني بصوره المختلفه من صوت وصورة وبيانات وإدخال البيانات على الحاسب بالوسائل الإلكترونية وأعمال التوصيف والتصميم لنظم الحاسبات بمختلف أنواعها وإنتاج وتطوير النظم المدمجة وتشغيلها والتدريب عليها. أعمال التوصيف والتصميم لشبكات نقل وتداول البيانات وإقامة وتشغيل وصيانة شبكات نقل الصوت والصورة والمعلومات المكتوبة وتقديم خدمات القيمة المضافة .
+div(class = 'footer-bottom')
+    div.container
+        div(class = 'row')
+            div(class = 'col-lg-6 py-2')
+                div(class = 'copy-right')
+                    | جميع الحقوق محفوظة &copy; ل #[a(class = 'logo' href = 'index.html') CIBS ] 2020 . 
+            div(class = 'col-lg-6 py-2')
+                div(class = 'social')
+                    - var icons = {'https://www.facebook.com' : 'fab fa-facebook', 'https://www.twitter.com' : 'fab fa-twitter', 'https://www.whatsapp.com' : 'fab fa-whatsapp', 'https://www.youtube.com' : 'fab fa-youtube'}
+                        each icon, link in icons
+                            a(class = `icon ${icon}` href =`${link}`)
+// End footer 

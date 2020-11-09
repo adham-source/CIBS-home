@@ -1,0 +1,33 @@
+.products {
+    @include section($mainColor, #0077b3);
+    .sub-title {
+        @include subTitle(#f4f4f4, right);
+    }
+    .text-product {
+        color: #f4f4f4;
+        .text {
+            line-height: 1.6;
+        }
+        .title {
+            font-weight: $bold;
+            @extend .text;
+        }
+    }
+    .counter {
+        text-align: center;
+        padding: 1rem .5rem;
+        margin: .7rem 0;
+        border-right: 3px solid #0077b3;
+        color: #f4f4f4;
+        .count-number {
+            font-weight: $bold;
+            margin: .5rem 0;
+        }
+        .count-text {
+            font-weight: $bold;
+        }
+        @media screen and (max-width: 991px) {
+            border-right: none;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+// Start offers 
+section(class = 'offers')
+    div.container
+        h2(class = 'sub-title') العروض
+        div(class = 'row')
+            - for (var x = 0; x <= 3 ; x++)
+                div(class = 'col-lg-3 col-md-6')
+                    div(class = 'card-offer')
+                        div(class = 'box-img')
+                            img(src = './assets/images/solutions/erp.jpg' alt = 'image' '')/
+                            a(class = 'global-link' href = '#')
+                        div(class = 'content')
+                            div(class = 'icon')
+                                span(class = 'fas fa-link')
+                            div(class = 'box-text')
+                                h5(class= 'title') عرض السنة الجديدة
+                                a(class = 'btn-link' href = '#') إقرأ المزيد
+// End offers 

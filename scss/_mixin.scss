@@ -1,0 +1,23 @@
+//- Global sections
+@mixin section($bg, $borColor) {
+    padding: 6rem 0 2rem 0;
+    margin: 0;
+    border-top: .3rem solid $borColor;
+    background: $bg;
+}
+
+//- sub-title
+@mixin subTitle($color, $align) {
+    font-weight: $bold;
+    margin: 0 0 3rem 0;
+    color: $color;
+    text-align: $align;
+}
+
+//- flexCenter
+@mixin  flexCenter($dir){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $dir;
+}

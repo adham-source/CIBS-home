@@ -1,0 +1,52 @@
+// Start contact us 
+section(class = 'contact-us')
+    div.container
+        h2(class = 'sub-title') اتصل بنا
+        div(class = 'row')
+            div(class = 'col-lg-6 my-3')
+                form(action = '#' method = 'GET')
+                    div(class = 'row')
+                        div(class = 'col-lg-6 col-md-12')
+                            label الاسم
+                            input(class = 'form-control' type = 'text' required '')/
+                        div(class = 'col-lg-2 col-md-6')
+                            label &nbsp;
+                            input(class = 'form-control' type = 'text' required '')/
+                        div(class = 'col-lg-4 col-md-6')
+                            label  رقم الهاتف
+                            input(class = 'form-control' type = 'text' maxlength = '11' required '')/
+                        div(class = 'col-lg-6 col-md-12')
+                            label البريد الإلكتروني
+                            input(class = 'form-control' type = 'email' required '')/
+                        div(class = 'col-lg-6 col-md-12')
+                            label الموضوع
+                            input(class = 'form-control' type = 'text' required '')/
+                        div(class = 'col-md-12')
+                            label الرسالة
+                            textarea(class = 'form-control' rows = '8' required)
+                    button(class = 'btn-submit' type = 'submit') #[span(class = 'fas fa-paper-plane')   ارسال الرسالة]
+            div(class = 'col-lg-6 my-3')
+                h5(class = 'title') تواصل معنا
+                hr
+                div(class = 'info phone')
+                    a(href ='tel:0020111111')
+                        span(class = 'icon fas fa-phone')
+                        span(class = 'num') هاتف : (+020) 12345678912
+                div(class = 'info email my-2')
+                    a(href = 'mailto:example@gamil.com') 
+                        span(class = 'icon fas fa-envelope')
+                        span(class = 'em') بريد إلكترونى : example@gmail.com
+                h5(class = 'title mt-3') ساعات العمل
+                hr
+                div(class = 'times')
+                    div(class = 'time')
+                        span(class = 'far fa-clock')
+                        span(class = 'day') الأحد - الخميس - 8ص إلى 6م
+                    div(class = 'time')
+                        span(class = 'far fa-clock')
+                        span(class = 'day') الأحد - الخميس - 8ص إلى 6م
+                    div(class = 'time')
+                        span(class = 'far fa-clock')
+                        span(class = 'day') الجمعة - مغلق
+
+// End contact us 

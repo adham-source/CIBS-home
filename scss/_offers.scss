@@ -1,0 +1,92 @@
+/*Start offers*/
+.offers {
+    @include section(none, rgba(0,0,0,.1));
+    h2 {
+        @include subTitle($mainDeColor, right);
+    }
+    .card-offer {
+        overflow: hidden;
+        position: relative;
+        border: 1px solid rgba(0,0,0,.3);
+        padding: .2rem;
+        border-radius: .3rem;
+        margin-bottom: 1rem;
+        transition: $trans;
+        .box-img {
+            position: relative;
+            overflow: hidden;
+            height: 15rem;
+            border-radius: .3rem;
+            transition: $trans;
+            img {
+                border-radius: .3rem;
+                object-position: center;
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                transform: scale(1);
+                transition: $trans;
+            }
+        }
+        .content {
+            border-radius: .3rem;
+            .icon {
+                @include flexCenter(row);
+                width: 3rem;
+                height: 3rem;
+                background: $mainColor;
+                color: #fff;
+                font-size: 1.2rem;
+                position: absolute;
+                top: .2rem;
+                left: .2rem;
+                border-radius: 0 0 1rem 0;
+                transform: translate(-3rem, -3rem);
+                transition: $trans;
+                span {
+                    transform: rotate(90deg);
+                }
+            }
+            .box-text {
+                position: absolute;
+                bottom: 2.3rem;
+                .title {
+                    margin: 0;
+                    padding: 1.5rem .5rem;
+                    color: #fff;
+                    background: rgba(0,0,0,.6);
+                    font-weight: $bold;
+                    transition: $trans;
+                }
+                .btn-link {
+                    position: absolute;
+                    bottom: -.8rem;
+                    right: .5rem;
+                    font-size: .9rem;
+                    padding: .3rem .7rem;
+                }
+            }
+        }
+        &:hover {
+            .box-img {
+                .global-link {
+                    background: rgba(0,0,0,.5);
+                }
+                img {
+                    transform: scale(1.1);
+                }
+            }
+            .content {
+                .icon {
+                    transform: translate(0, 0);
+                }
+            }
+            .box-text {
+                .title {
+                    background: rgba(0,0,0,1);
+                }
+            }
+        }
+    }
+}
+/*End offers*/
