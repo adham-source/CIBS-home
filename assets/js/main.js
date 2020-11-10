@@ -1,9 +1,9 @@
 // Navbar hide on scroll starts
 let prevScrollPos = window.pageYOffset;
+const myNavbar = document.querySelector('.navbar');
 // console.log(prevScrollPos);
 window.addEventListener('scroll', () =>  {
     let currentScrollPos = window.pageYOffset,
-        myNavbar = document.querySelector('.navbar'),
         myButtonUp = document.querySelector('#page-up');
     // Add scroll active
     myNavbar.classList.toggle('scroll-active', window.scrollY > 0);
@@ -23,6 +23,11 @@ window.addEventListener('scroll', () =>  {
         myButtonUp.style.display = 'none';
     }*/
 });
+
+//function bgNav() {
+let bgNav = () =>
+	window.scrollY > 0 ? myNavbar.classList.add('scroll-active') : myNavbar.classList.remove('scroll-active');
+bgNav();
 
 // carousel delay
 $('.carousel').carousel ({
@@ -53,10 +58,14 @@ $('ul.nav li.dropdown').hover(function() {
 const accordionItems = document.querySelectorAll('.questions .item');
 accordionItems.forEach(item => {
     item.addEventListener('click', () => {
-        accordionItems.forEach(item => {
-            item.classList.remove('accordion-active');
-        });
-        item.classList.add('accordion-active');
+		if(item.classList.contains('accordion-active')) {
+			item.classList.remove('accordion-active');
+		} else {
+			accordionItems.forEach(item => {
+				item.classList.remove('accordion-active');
+			});
+			item.classList.add('accordion-active');
+		}
     }); 
 });
 /*$(".faq").accordion({

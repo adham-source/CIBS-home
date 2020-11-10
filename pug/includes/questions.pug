@@ -4,7 +4,14 @@ section(class = 'questions')
         div(class = 'row justify-content-center')
             div(class = 'col-lg-6 col-md-10 mb-3')
                 div(class = 'fqa accordion' id="accordionExample")
-                    - var numsId = ['One', 'Two', 'Three', 'Four', 'Five', 'Six']
+                    div(class = 'card item accordion-active')
+                        div(class = 'card-header question' id=`headingSix` data-toggle="collapse" data-target=`#collapseSix` aria-expanded="true" aria-controls=`collapseSix`)
+                            p(class = 'quiz m-0') لماذا الحوسبة السحابية هي المستقبل للمنشأت التجارية ؟
+                            i(class = 'icon fas fa-caret-left')
+                            i(class = 'icon fas fa-sort-down')
+                        div(id=`collapseSix` class="collapse show" aria-labelledby=`headingSix` data-parent="#accordionExample")
+                            div(class = 'card-body answer') نحن في خضم تغيير جذري في تفضيلات التكنولوجيا. وكتبت آي دي سي ، وهي شركة عالمية رائدة في مجال استخبارات السوق ، أن “تطبيقات السحاب هي مفتاح دعم نمو الشركات الصغيرة والمتوسطة.” وتطالب شركة آي دي سي بالبيئة الحالية “المنصة الثالثة للابتكار والنمو” في صناعة تكنولوجيا المعلومات ، وتفيد بأن مرحلة الابتكار هذه هي محددة بـ “انفجار الابتكار وخلق القيمة على قمة منصة المنصة الثالثة ، مؤسسة المحمول والبيانات الاجتماعية والبيانات الكبيرة / تحليلات “.
+                    - var numsId = ['One', 'Two', 'Three', 'Four', 'Five']
                         each num in numsId
                             div(class = 'card item')
                                 div(class = 'card-header question' id=`heading${num}` data-toggle="collapse" data-target=`#collapse${num}` aria-expanded="true" aria-controls=`collapse${num}`)
